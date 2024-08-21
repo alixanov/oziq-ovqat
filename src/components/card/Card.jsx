@@ -20,7 +20,7 @@ const Card = () => {
   });
 
   useEffect(() => {
-    axios.get("http://localhost:3005/api/getall")
+    axios.get("https://oziq-ovqat-backend-eight.vercel.app/api/getall")
       .then(response => {
         setItems(response.data); // Save the retrieved data in state
         console.log("успешно");
@@ -33,7 +33,7 @@ const Card = () => {
 
   const handleDelete = (id) => {
     setIsLoading(true);
-    axios.delete(`http://localhost:3005/api/delete/${id}`)
+    axios.delete(`https://oziq-ovqat-backend-eight.vercel.app/api/delete/${id}`)
       .then(res => {
         setIsLoading(false);
         setDeleteState(prev => !prev);

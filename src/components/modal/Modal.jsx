@@ -27,8 +27,8 @@ const Modal = ({ onClose, product, onUpdate }) => {
 
      const addOrUpdateData = (data) => {
           const request = product
-               ? axios.put(`http://localhost:3005/api/update/${product._id}`, data) // Обновить, если продукт существует
-               : axios.post("http://localhost:3005/api/add", data); // Добавить новый продукт, если нет
+               ? axios.put(`https://oziq-ovqat-backend-eight.vercel.app/api/update/${product._id}`, data) // Обновить, если продукт существует
+               : axios.post("https://oziq-ovqat-backend-eight.vercel.app/api/add", data); // Добавить новый продукт, если нет
 
           request.then(response => {
                onClose(); // Закрыть модальное окно после успешного выполнения
