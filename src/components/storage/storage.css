@@ -1,0 +1,49 @@
+.storage {
+     width: 100%;
+     padding: 10px;
+     background-color: #f9f9f9;
+}
+
+.table-container {
+     margin-top: 10px;
+     overflow-x: auto;
+}
+
+.product-table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: 20px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-table th,
+.product-table td {
+     padding: 12px 15px;
+     text-align: left;
+}
+
+.product-table th {
+     background-color: #29292970;
+     color: white;
+}
+
+.product-table tbody tr:nth-child(even) {
+     background-color: #f2f2f2;
+}
+
+.product-table tbody tr:hover {
+     background-color: #ddd;
+}
+
+h1 {
+     text-align: center;
+     color: #333;
+}
+.income-section>h2 {
+     display: flex;
+     gap: 7px;
+}
+.income-section > h2 > p {
+     
+     color: crimson;
+}
